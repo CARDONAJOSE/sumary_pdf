@@ -26,6 +26,24 @@ Une application Streamlit qui utilise l'IA Gemini de Google pour générer des r
    git clone https://github.com/votre-utilisateur/pdf-summary-app.git
    cd pdf-summary-app
 
+2. **Lancement de l’application web sanas docker** :  
+   - Démarrez l’application :  
+     ```bash
+     streamlit run app.py
+     ```
+   - Rendez-vous sur `http://localhost:5000` (par défaut) pour interagir avec l’interface.
+
+3. **Lancement de l’application web avec docker** :  
+   - Démarrez l’application :  
+     ```bash
+     docker compose up --build -d
+     ```
+   - Rendez-vous sur `http://localhost:8501` (par défaut) pour interagir avec l’interface.
+
+- arrete docker
+    ```bash
+    docker compose down
+    ```
 ## structure du projet
 
 ```bash

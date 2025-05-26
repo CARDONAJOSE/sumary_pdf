@@ -1,0 +1,11 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  web:
+    build: .  # cherche le Dockerfile dans le répertoire courant (racine du projet)
+    ports:
+      - "8501:8501" # Port de Streamlit
+    volumes:
+      - .:/app # monte le répertoire courant dans /app dans le conteneur
+    working_dir: /app
+    command: streamlit run app.py --server.port 8501 --server.enableCORS false --server.enableXsrfProtection false
