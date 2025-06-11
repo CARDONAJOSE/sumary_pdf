@@ -26,7 +26,7 @@ Une application Streamlit qui utilise l'IA Gemini de Google pour générer des r
    git clone https://github.com/votre-utilisateur/pdf-summary-app.git
    cd pdf-summary-app
 
-2. **Lancement de l’application web sanas docker** :  
+2. **Lancement de l’application web sans docker** :  
    - Démarrez l’application :  
      ```bash
      streamlit run app.py
